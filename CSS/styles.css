@@ -176,7 +176,7 @@ a.menu-btn {
  /* Bio Section */
 .bio {
     margin-top: 212px;
-    margin-left: 200px;
+
     display: flex;
     flex-direction: column;
     justify-content:space-evenly;
@@ -190,6 +190,7 @@ a.menu-btn {
     justify-content:space-evenly;
     align-items: center;
     margin-top: 80px;
+    max-width: 80%;
  }
 .wrap h1{
         color: white;
@@ -282,7 +283,7 @@ a.menu-btn {
 
  .interest{
     grid-area: interest;
-    width: 75%;
+    width: 80%;
     min-height: 17vh;
     padding: 20px;
     margin: 0 auto;
