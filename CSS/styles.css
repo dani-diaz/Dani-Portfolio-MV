@@ -29,7 +29,6 @@ ul.menu {
     justify-content:space-evenly;
     margin-right: 5%;
     width: 50%;
-
 }
 a.menu-btn {
     color: white;
@@ -37,36 +36,140 @@ a.menu-btn {
     font-size: 1.5em;   
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: bold;
-    
-
 }
 
 .nav-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
 
 .logo {
     max-width: 50px;
     margin-left: 20px;
     max-height: 50px;
-
 }
 
 /* home section */
-.homeContainer {
-    background: black;
+
+h1::before {
+    content: '';
+    position: absolute;
+    height: 150px;
+    width: 660px;
+    background: linear-gradient( to right, hotpink 50%, #00000000 50%);
+    background-size: 1320px;
+    transform: rotate(180deg);
+    animation: name 1.5s ease-out 0s 1 forwards;
+ }
+ @keyframes name{
+    0%{
+        background-position: -100%;
+    }
+    50%,70%{
+        background-position: 0;
+    }
+    100%{
+        background-position: 100%;
+    }
+}
+
+.home{
     height: 800px;
     width: 100%;
     color: white;
-    display: flex;
-    flex-direction: column;
     margin-top: 112px;
-}
-.div.img1 {
-    max-width: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+ }
+ 
+ .homeContent div{
+    min-width: 660px;
+    min-height: 150px;
+ }
+ .homeContent h3{
+    font-family: 'Inconsolata', monospace;
+    color: hotpink;
+    font-size: 1.5rem;
+ }
+ .homeContent h1{
+    color: #E7E9E9;
+    font-size: 7.5rem;
+    visibility: hidden;
+    animation: removeHide 0s ease-out 0.5s 1 forwards;
+ }
+ @keyframes removeHide{
+    100%{
+        visibility: visible;
+    }
+ }
+ .homeContent h2{
+    color: gray;
+    font-size: 2rem;
+ }
 
-    margin-right: 150%;
+.headtext{
+    font-size: 300%;
+    animation-name: head;
+    animation-duration: 4s;
+    animation-iteration-count:once;
 }
+
+@keyframes head {
+    0% {font-size:100%; opacity:0;}
+    50% {font-size:0; opacity:0;}
+    100% {font-size:300%;opacity:1;}
+}
+ .role{
+    font-family: 'Inconsolata', monospace;
+    color: hotpink;
+   
+ }
+  
+ /* Background Animation */
+ .box{
+    position: absolute;
+    bottom: 0%;
+    background-color: rgba(55 83 110 / 30%);
+    box-shadow: 0 0 10px 0 rgba( 31, 38, 135, 0.5 );
+    border: 1px solid rgba( 255, 255, 255, 0.3 );
+    height: 100px;
+    width: 100px;
+    z-index: -1;
+ }
+ .box1{
+    left: 7%;
+    animation: bgAnimate 3.5s linear 0s infinite;
+ }
+ .box2{
+    left: 27%;
+    animation: bgAnimate 3s linear 0s infinite;
+ }
+ .box3{
+    left: 47%;
+    animation: bgAnimate 2.5s linear 0s infinite;
+ }
+ .box4{
+    left: 67%;
+    animation: bgAnimate 3s linear 0s infinite;
+ }
+ .box5{
+    left: 87%;
+    animation: bgAnimate 3.5s linear 0s infinite;
+ }
+ @keyframes bgAnimate{
+    0%{
+        opacity: 1;
+        transform: rotate(0deg);
+    }
+    100%{
+        opacity: 0;
+        bottom: 100%;
+        height: 20px;
+        width: 20px;
+        transform: rotate(360deg);
+    }
+ }
+  
