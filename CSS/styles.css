@@ -176,7 +176,6 @@ a.menu-btn {
  /* Bio Section */
 .bio {
     margin-top: 212px;
-
     display: flex;
     flex-direction: column;
     justify-content:space-evenly;
