@@ -478,3 +478,52 @@ a.menu-btn {
    color: #E7E9E9;
    text-align: center;
 }
+
+/* COntact Section */
+.contact {
+   height: 800px;
+    width: 100%;
+    color: white;
+    margin-top: 212px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.contact h1{
+   color: white;
+   font-size: 7.5rem;
+   visibility: hidden;
+   animation: removeHide 0s ease-out 0.5s 1 forwards;
+
+}
+@keyframes removeHide{
+   100%{
+       visibility: visible;
+   }
+}
+
+.contact h3{
+   width: 100%;
+   margin: 0%;
+   text-align: center;
+   color: white;
+   font-weight: 500;
+   font-size: 250%;
+   z-index: -1;
+}
+.contact .socials{
+   display: flex;
+   justify-content: space-around;
+   width: 40%;
+   margin-bottom: 150px;
+}
+
+.contactemail {
+   width: 100%;
+   margin: 0%;
+   text-align: center;
+   font-size: 200%;
+}
